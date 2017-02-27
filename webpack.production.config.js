@@ -22,6 +22,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.scss$/,
+      exclude: /node_modules/,
       use: [{
         loader: "style-loader" // creates style nodes from JS strings
       }, {
@@ -30,6 +31,12 @@ module.exports = {
         loader: "sass-loader" // compiles Sass to CSS
       }]
     }]
+  },
+
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+    ]
   },
 
   plugins: [
