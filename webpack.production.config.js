@@ -30,7 +30,7 @@ module.exports = {
         loader: "sass-loader" // compiles Sass to CSS
       }]
     }]
-  }
+  },
 
   plugins: [
     new webpack.DefinePlugin({
