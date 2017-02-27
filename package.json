@@ -2,6 +2,9 @@
   "name": "KoreroMai",
   "version": "1.0.0",
   "description": "Learn Te Reo",
+  "engines": {
+    "node": "6.10.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "ava test/**/*.js --serial --verbose",
