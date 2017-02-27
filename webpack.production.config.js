@@ -20,21 +20,17 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      },
-      { test: /\.scss$/, loaders: ['style','css','sass'] }
-    ]
-  },
-
-  sassLoader: {
-    includePaths: [
-      path.resolve(__dirname, './node_modules/sass-loader/lib/loader')
-    ]
-  },
+    rules: [{
+      test: /\.scss$/,
+      use: [{
+        loader: "style-loader" // creates style nodes from JS strings
+      }, {
+        loader: "css-loader" // translates CSS into CommonJS
+      }, {
+        loader: "sass-loader" // compiles Sass to CSS
+      }]
+    }]
+  }
 
   plugins: [
     new webpack.DefinePlugin({
