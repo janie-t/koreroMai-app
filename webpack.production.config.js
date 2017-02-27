@@ -26,13 +26,13 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
-      { test: /\.scss$/, loaders: ['style-loader','css-loader','sass-loader'] }
+      { test: /\.scss$/, loaders: ['style','css','sass'] }
     ]
   },
 
   sassLoader: {
     includePaths: [
-      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+      path.resolve(__dirname, './node_modules/sass-loader/lib/loader')
     ]
   },
 
