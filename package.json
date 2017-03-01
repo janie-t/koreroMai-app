@@ -65,7 +65,6 @@
     "redux": "^3.6.0",
     "sass-loader": "^5.0.1",
     "script-loader": "^0.7.0",
-    "sqlite3": "^3.1.8",
     "style-loader": "^0.13.1",
     "superagent": "^3.4.1",
     "url-parse": "^1.1.7",
@@ -84,6 +83,7 @@
     "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
     "sass-loader": "^5.0.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "sqlite3": "^3.1.8"
   }
 }
