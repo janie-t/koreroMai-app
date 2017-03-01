@@ -2,10 +2,6 @@
   "name": "KoreroMai",
   "version": "1.0.0",
   "description": "Learn Te Reo",
-  "engines": {
-    "node": "6.10.0",
-    "npm": "4.3.0"
-  },
   "main": "index.js",
   "scripts": {
     "test": "ava test/**/*.js --serial --verbose",
@@ -19,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/janie-t/koreroMaiTest"
+    "url": "http://korero-mai.herokuapp.com"
   },
   "keywords": [],
   "author": "",
@@ -77,7 +73,6 @@
     "webpack-dev-middleware": "^1.9.0"
   },
   "devDependencies": {
-    "css-loader": "^0.26.2",
     "deep-freeze": "0.0.1",
     "eslint": "^3.14.1",
     "eslint-config-standard": "^6.2.1",
@@ -89,7 +84,6 @@
     "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
     "sass-loader": "^5.0.1",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+    "style-loader": "^0.13.1"
   }
 }
