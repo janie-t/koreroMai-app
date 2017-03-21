@@ -92,6 +92,23 @@
   color: black;
 }
 
+.reward-container {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  background-image: url(/images/activity-images/kete.png) no-repeat;
+  background: yellow;
+  margin:auto;
+  margin-top: 1em;
+}
+
+.animation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: red;
+}
+
 
 @include phoneLand {
   .welcome-letters {
@@ -167,17 +184,17 @@
   .play-box {
     margin-left: 8em;
     margin-top: 1.5em;
-    height: 20em;
+    height: 10em;
   }
 
   .welcome-letters {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: .5em;
     margin-bottom: 1em;
   }
 
   .listen-sound-letters {
-    font-size: 3.5em;
+    font-size: 2.5em;
     margin: 1em;
     min-width: 2em;
   }
@@ -185,7 +202,7 @@
   .note {
     top: 60%;
     left: 30%;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .prac-letters-modal {

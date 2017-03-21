@@ -175,6 +175,9 @@ class PracticeLetters extends React.Component {
             {this.generateLetter(lettersArr, letters, answer)}
           </div>
           <WrongAnswerCue showWrong={this.props.showWrong}/>
+          <div className='reward-container'>
+            <div className='animation'>Animation goes here</div>
+          </div>
         </div>
       )
     } else if (level === 5) {
@@ -186,6 +189,9 @@ class PracticeLetters extends React.Component {
             {this.generateLetter(lettersArr, letters, answer)}
           </div>
           <WrongAnswerCue showWrong={this.props.showWrong}/>
+          <div className='reward-container'>
+            <div className='animation'>Animation goes here</div>
+          </div>
         </div>
       )
     } else return (
@@ -197,9 +203,14 @@ class PracticeLetters extends React.Component {
           {this.generateLetter(lettersArr, letters, answer)}
         </div>
         <WrongAnswerCue showWrong={this.props.showWrong}/>
+        <div className='reward-container'>
+          <div className='animation'>Animation goes here</div>
+        </div>
       </div>
     )
   }
-  }
+
+
+}
 
   module.exports = connect((state) => state)(PracticeLetters)
